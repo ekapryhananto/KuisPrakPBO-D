@@ -14,6 +14,8 @@ class Contact {
     private String email;
     private String phoneNumber;
 
+    
+
     public Contact(String name, String email, String phoneNumber) {
         this.name = name;
         this.email = email;
@@ -38,5 +40,9 @@ class Contact {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+    
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
