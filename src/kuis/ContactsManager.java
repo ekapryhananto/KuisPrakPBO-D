@@ -24,7 +24,6 @@ public class ContactsManager{
         friendsCount++;
     }
         Contact searchContact(String searchName){
-            boolean ada;
         for(int i = 0; i < friendsCount; i++){
             if(myFriends[i].getName().toLowerCase().equals(searchName)){
                 return myFriends[i];

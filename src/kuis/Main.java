@@ -17,43 +17,43 @@ public class Main {
         
         
         do {
-            ContactsManager Manager = new ContactsManager();
+            ContactsManager myContactManager = new ContactsManager();
 
             name = "Eka";
             email = "eka.pryhananto@gmail.com";
             phoneNumber = "083866731132";
             Contact kontak = new Contact(name, email, phoneNumber);
-            Manager.addContact(kontak);
+            myContactManager.addContact(kontak);
 
             name = "Pryhananto";
             email = "pryhananto@gmail.com";
             phoneNumber = "0123456789";
             Contact kontak2 = new Contact(name, email, phoneNumber);
-            Manager.addContact(kontak2);
+            myContactManager.addContact(kontak2);
 
             name = "Ayi";
             email = "ayiprovallo@gmail.com";
             phoneNumber = "0897456321";
             Contact kontak3 = new Contact(name, email, phoneNumber);
-            Manager.addContact(kontak3);
+            myContactManager.addContact(kontak3);
 
             name = "Riris";
             email = "Ririssssssssss@gmail.com";
             phoneNumber = "0855555555";
             Contact kontak4 = new Contact(name, email, phoneNumber);
-            Manager.addContact(kontak4);
+            myContactManager.addContact(kontak4);
             
             name = "Sugiono";
             email = "onosugiwak@gmail.com";
             phoneNumber = "081122334455";
             Contact kontak5 = new Contact(name, email, phoneNumber);
-            Manager.addContact(kontak5);
+            myContactManager.addContact(kontak5);
 
             Scanner input = new Scanner(System.in);
             System.out.print("Search Name : "); cari = input.nextLine();
             System.out.println("Looking for " + cari + "'s contact . . .");
             
-            Contact result = Manager.searchContact(cari.toLowerCase());
+            Contact result = myContactManager.searchContact(cari.toLowerCase());
             
             if(result != null){
                 System.out.println("Name        : " + result.getName());
